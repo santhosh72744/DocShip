@@ -127,28 +127,34 @@ Payment API — validates and records card details
 Label Generator API — produces PDF label with tracking ID
 
 
-### 🖥 Backend Setup
+## 1️⃣ Clone the repository
+git clone https://github.com/santhosh72744/DocShip
+
+## 2️⃣ Move into the project directory
+cd DocShip
+
+## 🖥 Backend Setup
 Install dependencies
 cd backend
-npm install
+ ### npm install
 
 Run backend
-npm start
+### npm start
 
 
-Default backend URL:
+### Default backend URL:
 
 http://localhost:5000
 
-### 🎨 Frontend Setup
+##  🎨 Frontend Setup
 Install dependencies
 cd frontend
-npm install
+### npm install
 
 Run development server
-npm start
+ ### npm start
 
 
-Default frontend URL:
+### Default frontend URL:
 
 http://localhost:3000
