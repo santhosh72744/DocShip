@@ -56,21 +56,23 @@ npm test
 
 ---
 
-## Flow Diagram
- ```mermaid
 flowchart TD
 
-  A([Start]) --> B[New shipment]
-  B --> C[ Select Type of shipping]
-  C --> D[ Select Source country]
-  D --> E[ Enter Zip code]
-  E --> F[Select Destination country]
-  F --> G[Enter Pin code]
-  G --> H[Select courier service]
-  H --> I[Submit]
-  I --> J[Show details: price, currency, days required ]
-  J --> K[Confirm]
-  K --> L([End])
+  A([Start]) --> B[Enter ZIP code]
+  B --> C[Enter PIN code]
+  C --> D[Select courier service]
+  D --> E[Get shipping estimate\n(price, delivery days)]
+  E --> F[Paste full address or enter manually]
+  F --> G[Address parsed into structured fields]
+  G --> H[Review shipment details]
+  H --> I[Enter payment details\n(Card No, Expiry, CVV)]
+  I --> J[Payment validation]
+  J -->|Valid| K[Payment successful]
+  J -->|Invalid| JErr[Show error message]
+
+  K --> L[Generate shipping label\n(PDF + tracking number)]
+  L --> M([End])
+
 
 
 
