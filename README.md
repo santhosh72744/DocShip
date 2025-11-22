@@ -127,5 +127,28 @@ Payment API — validates and records card details
 Label Generator API — produces PDF label with tracking ID
 
 
-+====================================================================================+
+### 🖥 Backend Setup
+Install dependencies
+cd backend
+npm install
 
+Run backend
+npm start
+
+
+Default backend URL:
+
+http://localhost:5000
+
+### 🎨 Frontend Setup
+Install dependencies
+cd frontend
+npm install
+
+Run development server
+npm start
+
+
+Default frontend URL:
+
+http://localhost:3000
